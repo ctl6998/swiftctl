@@ -104,3 +104,19 @@ if let year = Int(readLine()!) {
 } else {
     print("Correct your input")
 }
+
+print("4.1.Find smallest n factorial")
+print("Enter a number m: ", terminator: "")
+if let m = Int(readLine()!) {
+    var n = 1
+    var factorial = 1
+
+    while factorial <= m {
+        n += 1
+        factorial *= n
+    }
+
+    print("The smallest n such that n! > \(m) is \(n)")
+} else {
+    print("Correct your input")
+}
